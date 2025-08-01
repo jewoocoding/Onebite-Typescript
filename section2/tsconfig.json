@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "esnext" // 변환되는 자바스크립트코드 버전
+        ,"module": "esnext" // 모듈 버전
+        , "outDir": "dist" // 변환되는 자바스크립트 파일을 저장할 폴더 지정
+        ,"strict": true // 엄격한 타입 검사
+        , "moduleDetection": "force" // 타입스크립트 파일들을 개별모듈로 취급
+        ,"skipLibCheck": true
+        ,"strictNullChecks": true // 엄격한 null 검사, strict의 하위옵션
+    },
+    "ts-node": {
+        "esm": true
+    },
+    "include": ["src"] // 자동으로 컴파일할 파일들이 있는 폴더 지정
+}
